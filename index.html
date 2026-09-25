@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <title>Hoja de Vida Colombiana</title>
+  </head>
+  <body class="bg-stone-100 text-slate-800">
+    <div
+      class="max-w-6xl mx-auto my-10 bg-white border border-gray-200 shadow-sm rounded-2xl overflow-hidden"
+    >
+      <header
+        class="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-200 px-6 py-5 bg-gradient-to-r from-emerald-50 to-white"
+      >
+        <div class="flex items-center gap-4">
+          <img
+            src="Esc_colom.jpg"
+            alt="Escudo de Colombia"
+            class="h-16 w-16 rounded-full border border-emerald-200 bg-white p-1"
+          />
+          <div>
+            <h1
+              class="text-xl font-extrabold uppercase tracking-wide text-gray-900"
+            >
+              Formato Único
+            </h1>
+            <h2
+              class="text-2xl font-black uppercase tracking-[0.25em] text-gray-950"
+            >
+              Hoja de Vida
+            </h2>
+            <p class="text-xs italic text-gray-500">
+              Persona Natural (Leyes 190 de 1995, 489 y 443 de 1998)
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-4 md:mt-0 text-sm font-semibold text-emerald-800 uppercase tracking-[0.2em]"
+        >
+          Colombia
+        </div>
+      </header>
+
+      <form class="p-6 space-y-8">
+        <section class="space-y-4">
+          <div
+            class="rounded-xl flex items-center gap-2 text-sm font-bold uppercase bg-black tracking-[0.2em] text-white "
+          >
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-600 "></span>
+            Datos personales
+            
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-4" >
+            <div>
+              <label
+                for="nombre"
+                class=" block mb-2.5 text-sm font-medium text-gray-700" 
+                >Nombre</label
+              >
+              <input
+                type="text"
+                id="nombre"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="primer_apellido"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Primer Apellido</label
+              >
+              <input
+                type="text"
+                id="primer_apellido"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Primer Apellido"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="segundo_apellido"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Segundo Apellido</label
+              >
+              <input
+                type="text"
+                id="segundo_apellido"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Segundo Apellido"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="tipo_documento"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Tipo de Documento</label
+              >
+              <select
+                id="tipo_documento"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs"
+              >
+                <option selected>Seleccione</option>
+                <option value="cedula">Cédula de Ciudadanía</option>
+                <option value="cedula_extranjera">Cédula de Extranjería</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="nit">NIT</option>
+              </select>
+            </div>
+
+            <div>
+              <label
+                for="numero_documento"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Número de Documento</label
+              >
+              <input
+                type="text"
+                id="numero_documento"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="123456789"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="sexo"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Sexo</label
+              >
+              <select
+                id="sexo"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs"
+              >
+                <option selected>Sexo</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div>
+              <label
+                for="fecha_nacimiento"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Fecha de Nacimiento</label
+              >
+              <input
+                type="date"
+                id="fecha_nacimiento"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs"
+              />
+            </div>
+
+            <div>
+              <label
+                for="nacionalidad"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Nacionalidad</label
+              >
+              <select
+                id="nacionalidad"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs"
+              >
+                <option selected>Seleccione</option>
+                <option value="colombiano">Colombiano</option>
+                <option value="extranjero">Extranjero</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <div
+            class="flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] bg-black text-white rounded-xl"
+          >
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-600"></span>
+            Información de contacto
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-4">
+            <div>
+              <label
+                for="telefono"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Número de teléfono</label
+              >
+              <input
+                type="tel"
+                id="telefono"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="3001234567"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="celular"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Celular</label
+              >
+              <input
+                type="tel"
+                id="celular"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="3201234567"
+              />
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Correo electrónico</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="correo@ejemplo.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="direccion"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Dirección</label
+              >
+              <input
+                type="text"
+                id="direccion"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Cra 12 # 34-56"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <div
+            class="flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] bg-black text-white rounded-xl"
+          >
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-600"></span>
+            Situación militar
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-4">
+            <div class="md:col-span-2">
+              <label class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Libreta Militar</label
+              >
+              <div class="flex flex-wrap items-center gap-6">
+                <div class="flex items-center">
+                  <input
+                    id="libreta-primera"
+                    type="radio"
+                    name="libreta_militar"
+                    value="primera"
+                    class="w-4 h-4 text-emerald-600 border-gray-300 bg-gray-100 rounded-full focus:ring-2 focus:ring-emerald-200"
+                    checked
+                  />
+                  <label
+                    for="libreta-primera"
+                    class="select-none ms-2 text-sm font-medium text-gray-700"
+                    >Primera clase</label
+                  >
+                </div>
+
+                <div class="flex items-center">
+                  <input
+                    id="libreta-segunda"
+                    type="radio"
+                    name="libreta_militar"
+                    value="segunda"
+                    class="w-4 h-4 text-emerald-600 border-gray-300 bg-gray-100 rounded-full focus:ring-2 focus:ring-emerald-200"
+                  />
+                  <label
+                    for="libreta-segunda"
+                    class="select-none ms-2 text-sm font-medium text-gray-700"
+                    >Segunda clase</label
+                  >
+                </div>
+
+                <div class="flex items-center">
+                  <input
+                    id="libreta-no-aplica"
+                    type="radio"
+                    name="libreta_militar"
+                    value="no_aplica"
+                    class="w-4 h-4 text-emerald-600 border-gray-300 bg-gray-100 rounded-full focus:ring-2 focus:ring-emerald-200"
+                  />
+                  <label
+                    for="libreta-no-aplica"
+                    class="select-none ms-2 text-sm font-medium text-gray-700"
+                    >No aplica</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label
+                for="numero_libreta"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Número de Libreta</label
+              >
+              <input
+                type="text"
+                id="numero_libreta"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="123456789"
+              />
+            </div>
+
+            <div>
+              <label
+                for="distrito_militar"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Distrito Militar</label
+              >
+              <input
+                type="text"
+                id="distrito_militar"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Distrito"
+              />
+            </div>
+
+           
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <div
+            class="flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-white bg-black rounded-xl  " 
+          >
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-600"></span>
+            Formación académica
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <label
+                for="nivel_estudios"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Nivel académico</label
+              >
+              <select
+                id="nivel_estudios"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm  rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs"
+              >
+                <option selected>Seleccione</option>
+                <option value="bachillerato">Bachillerato</option>
+                <option value="tecnico">Técnico</option>
+                <option value="tecnologo">Tecnólogo</option>
+                <option value="pregrado">Pregrado</option>
+                <option value="postgrado">Postgrado</option>
+              </select>
+            </div>
+
+            <div>
+              <label
+                for="titulo"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Título obtenido</label
+              >
+              <input
+                type="text"
+                id="titulo"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Ingeniería de Sistemas"
+              />
+            </div>
+
+            <div>
+              <label
+                for="institucion"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Institución</label
+              >
+              <input
+                type="text"
+                id="institucion"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Universidad / Instituto"
+              />
+            </div>
+
+            <div>
+              <label
+                for="ano_egreso"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Año de egreso</label
+              >
+              <input
+                type="text"
+                id="ano_egreso"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="2024"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <div
+            class="flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-white bg-black rounded-xl "
+          >
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-600"></span>
+            Experiencia laboral
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <label
+                for="empresa"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Empresa</label
+              >
+              <input
+                type="text"
+                id="empresa"
+                class="rounded-xl-bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-xl focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Nombre de la empresa"
+              />
+            </div>
+
+            <div>
+              <label
+                for="cargo"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Cargo</label
+              >
+              <input
+                type="text"
+                id="cargo"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Analista / Asistente / Coordinador"
+              />
+            </div>
+
+            <div>
+              <label
+                for="fecha_inicio"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Fecha de inicio</label
+              >
+              <input
+                type="date"
+                id="fecha_inicio"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs"
+              />
+            </div>
+
+            <div>
+              <label
+                for="fecha_fin"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Fecha de finalización</label
+              >
+              <input
+                type="date"
+                id="fecha_fin"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="descripcion_experiencia"
+              class="block mb-2.5 text-sm font-medium text-gray-700"
+              >Descripción de funciones</label
+            >
+            <textarea
+              id="descripcion_experiencia"
+              rows="4"
+              class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+              placeholder="Describe tus responsabilidades y logros principales..."
+            ></textarea>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <div
+            class="flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-white bg-black rounded-xl"
+          >
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-600"></span>
+            Información adicional
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2">
+            <div>
+              <label
+                for="habilidades"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Habilidades</label
+              >
+              <input
+                type="text"
+                id="habilidades"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Excel, liderazgo, atención al cliente"
+              />
+            </div>
+
+            <div>
+              <label
+                for="idiomas"
+                class="block mb-2.5 text-sm font-medium text-gray-700"
+                >Idiomas</label
+              >
+              <input
+                type="text"
+                id="idiomas"
+                class="rounded-xl bg-neutral-secondary-medium border border-default-medium text-gray-800 text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-gray-400"
+                placeholder="Inglés B1, Español nativo"
+              />
+            </div>
+          </div>
+        </section>
+
+        <div class="flex items-start gap-3 pt-2">
+          <div class="flex items-center h-5">
+            <input
+              id="acepto"
+              type="checkbox"
+              value=""
+              class="w-4 h-4 border border-gray-300 rounded text-emerald-600 focus:ring-2 focus:ring-emerald-200"
+              required
+            />
+          </div>
+          <label for="acepto" class="text-sm font-medium text-gray-700">
+            Declaro que la información suministrada es verídica y autorizo el
+            tratamiento de mis datos conforme a la ley.
+          </label>
+        </div>
+
+        <div class="flex justify-end">
+          <button
+            type="submit"
+            class="rounded-xl text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:ring-emerald-200 font-medium rounded-base text-sm px-5 py-2.5 shadow-sm transition-all"
+          >
+            Enviar hoja de vida
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
